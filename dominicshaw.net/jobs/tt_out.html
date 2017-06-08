@@ -1,0 +1,38 @@
+<p>
+	My time at TT can be best summarised by the projects listed below. Each of these projects has been built from scratch and the last two were written entirely by
+	myself (with peer review and shared best practice). Each features a <span>WPF MVVM</span> front-end, a <span>WCF</span> middle-tier (although many new projects are now <span>Web API</span>), and a <span>SQL Server</span>
+	backend. Each also has a lightweight <span>ASP.NET</span> front-end designed for remote access. They all make heavy use of <span>SSRS</span> and <span>DevExpress reporting</span>.
+</p>
+<ul>
+	<li>
+		A "to-the-second" <span>risk & exposure system</span>, specifically targeting hedge and macro teams but later rolled out to the long side as well. This was one of my first large projects
+		at TT. Now mature, it has been, by any standard, very successful. It integrates directly with our PMS/OMS and with <span>Bloomberg</span> to deliver accurate profit and loss numbers in
+		real-time. The work on this system was split largely into middle and front-end, between two developers. I took the WCF middle tier and the small amount of SQL (mostly loading
+		from existing databases), while my colleague worked on the WPF front-end. I also authored the <span>ASP.NET front-end for remote access</span> to this system.
+	</li>
+	<li>
+		A research system, which allows quick and easy storing and retrieval of research (models, broker reports, etc). The project, important to a research led investment firm, could
+		have been simple however there was a lot of room for innovation. Some areas that I found to increase the effectiveness of the product were:
+		<ul>
+			<li>An <span>investment case</span> system, including automatic generation of a basic model with Bloomberg data;</li>
+			<li>"Ideas" management for tracking stocks;</li>
+			<li><span>Integration with the OMS</span> to tie everything together – i.e. what research is for what position / idea, association of research with stocks from the OMS, etc.;</li>
+			<li>Plugins for Microsoft Office (with <span>VSTO toolbars</span>) and Adobe Reader (with their plugin SDK);</li>
+			<li><span>Microsoft Exchange (EWS)</span> integration which read from a "deposit" mailbox to get notes sent via email, scrape out the associated companies and attachments and upload it all to the system. There is also functionality to scrape a general "research" mailbox for broker reports;</li>
+			<li>Company Meeting management – input and scraping via Exchange (EWS) of categorised meetings in users calendars to coalesce into a single Company Meeting calendar.</li>
+		</ul>
+		This system replaced Advent's Tamale and was preferred by all users – not just in user experience but in functionality as well. The resounding success of this project led to my
+		being given the reigns to developing another, highly integral system for the company:
+	</li>
+	<li>
+		A "ticketing" application which allows the managers to <span>model a trade</span> for most asset classes and submit the ticket directly to traders and/or the OMS. The modelling functionality
+		built into this allowed <span>automation</span> of things like <span>dispersion</span>, <span>CFD management</span>, <span>order sizing</span>, as well as any validation and <span>compliance</span> that the OMS is not suited to. My close work
+		with fund managers on this project has enabled me to create a user friendly application that they were keen and confident to use. The successful uptake of this application by the
+		fund managers reflected the real success of the project, especially as many were initially reticent to change an ingrained practice of paper ticketing.
+	</li>
+</ul>
+<p>
+	As with any small to medium sized company, there is often call for small applications; be that integrations between systems, web front-ends for simple tasks, scheduled jobs,
+	or reports. This is something I am happy to absorb into my tasks, and this is a regular reality. Some examples include <span>IPO ticketing</span> and workflow, the <span>
+	Compliance team's workflow application</span> (attestations, PA trading, regulatory reporting, etc.), <span>chart packs</span>, and many more.
+</p>
