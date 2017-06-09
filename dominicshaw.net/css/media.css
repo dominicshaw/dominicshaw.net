@@ -8,13 +8,13 @@ http://www.templatemo.com/tm-473-november
 
 @media only screen and (min-width: 769px) and (max-width: 10000px) {
 	#mobile_sec .menumobile { display: block!important; }
-}
-
-@media only screen and (min-width: 1025px) and (max-width: 1200px) {
 
     #headertextbig { display: inline; white-space: nowrap; }
     #headertextsml { display: none; }
+}
 
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    
 	header { width: 100%; }
 	header .Center { width: 100%; padding: 0px 2%;  }
 	header .site-logo { padding: 18px 0 0 1px; }
@@ -80,9 +80,6 @@ http://www.templatemo.com/tm-473-november
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-
-    #headertextbig { display: inline; white-space: nowrap; }
-    #headertextsml { display: none; }
 
 	header { width: 100%; height: 87px; }
 	header .Center { width: 100%; padding: 0px 2%; }
@@ -407,9 +404,6 @@ http://www.templatemo.com/tm-473-november
 
 @media only screen and (max-width: 1199px) {
 	
-    #headertextbig { display: inline; white-space: nowrap; }
-    #headertextsml { display: none; }
-
 	header,
 	.Navigation li,
 	.Navigation li:hover span, 
@@ -422,9 +416,6 @@ http://www.templatemo.com/tm-473-november
 }
 @media only screen and (max-width: 767px) {
     
-    #headertextbig { display: inline; white-space: nowrap; }
-    #headertextsml { display: none; }
-
 	header { 
 		height: 55px; 
 		position: fixed;
