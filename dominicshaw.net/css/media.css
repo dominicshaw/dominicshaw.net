@@ -407,6 +407,9 @@ http://www.templatemo.com/tm-473-november
 
 @media only screen and (max-width: 1199px) {
 	
+    #headertextbig { display: inline; white-space: nowrap; }
+    #headertextsml { display: none; }
+
 	header,
 	.Navigation li,
 	.Navigation li:hover span, 
@@ -418,6 +421,10 @@ http://www.templatemo.com/tm-473-november
 	}
 }
 @media only screen and (max-width: 767px) {
+    
+    #headertextbig { display: inline; white-space: nowrap; }
+    #headertextsml { display: none; }
+
 	header { 
 		height: 55px; 
 		position: fixed;
