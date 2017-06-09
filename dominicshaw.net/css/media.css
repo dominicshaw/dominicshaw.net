@@ -12,6 +12,9 @@ http://www.templatemo.com/tm-473-november
 
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
 
+    #headertextbig { display: inline; white-space: nowrap; }
+    #headertextsml { display: none; }
+
 	header { width: 100%; }
 	header .Center { width: 100%; padding: 0px 2%;  }
 	header .site-logo { padding: 18px 0 0 1px; }
@@ -77,6 +80,9 @@ http://www.templatemo.com/tm-473-november
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    #headertextbig { display: inline; white-space: nowrap; }
+    #headertextsml { display: none; }
 
 	header { width: 100%; height: 87px; }
 	header .Center { width: 100%; padding: 0px 2%; }
@@ -184,6 +190,9 @@ http://www.templatemo.com/tm-473-november
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+    
+    #headertextbig { display: none; }
+    #headertextsml { display: inline; white-space: nowrap; }
 
 	header { width: 100%; position: absolute; height: 57px;}
 	header .Center { width: 100%;  }
@@ -287,9 +296,10 @@ http://www.templatemo.com/tm-473-november
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
+    
+    #headertextbig { display: none; }
+    #headertextsml { display: inline; white-space: nowrap; }
 
-
-	header { width: 100%; position: absolute; height: 57px; }
 	header .Center { width: 100%;}
 	header .site-logo { padding: 10px 0% 0px 3%; position: relative; z-index: 1; }
 	header .site-logo h1 { margin: 0px; line-height: 36px; }
