@@ -155,12 +155,12 @@ header.smaller .Navigation li { height: 60px; }
     .Now_sec .Tabside li { float: none; padding: 0; margin: 0 -2px; display: inline-block;}
     .Now_sec .Tabside li a { padding: 14px 40px 13px 40px; font-size: 18px; color: #989898; font-family: 'Open Sans', sans-serif; font-weight: 400; text-decoration: none; text-transform: uppercase; border: solid 1px #d5d5d5; display: block; transition: all 0.3s ease; }
     .Now_sec .Tabside li a:hover, .Now_sec .Tabside li a.activeLink { border: solid 1px #ff9408; background: #ff9408; color: #fff;}
-    .Now_sec .Tabside .TabImage { width: 43.63%; float: left; position: relative; }
+    .Now_sec .Tabside .TabImage { width: 0%; float: left; position: relative; }
     .Now_sec .Tabside .TabImage .img1 { position: absolute; top: 0; left: 42px; height: 260px; background: url(../img/about-shadow.png) no-repeat; background-position: 25px 223px; }
     .Now_sec .Tabside .TabImage .img1 img { padding: 5px; border: solid 1px #ececec; background: #fff;  }
     .Now_sec .Tabside .TabImage .img2 { position: absolute; top: 40px; left: 2px; height: 260px; background: url(../img/about-shadow.png) bottom center no-repeat; background-position: 0 223px; }
     .Now_sec .Tabside .TabImage .img2 img { padding: 5px; border: solid 1px #ececec; background: #fff;  }
-    .Now_sec .Tabside .Description { width: 54.3%; float: right; text-align: left; margin-top: -6px;}
+    .Now_sec .Tabside .Description { width: 100%; float: right; text-align: left; margin-top: -6px;}
     .Now_sec .Tabside .Description h3 { font-size: 24px; color: #000; margin: 0; text-transform: uppercase; font-family:'Open Sans'; line-height: 29px; }
     .Now_sec .Tabside .Description h3 span { padding-left: 3px; font-size: 14px; color: #ff9000; display: block; }
     .Now_sec .Tabside .Description p { padding: 21px 0 4px 0; font-size: 14px; color: #979797; margin: 0; font-family:'Open Sans'; line-height: 25px; }

@@ -114,9 +114,9 @@ http://www.templatemo.com/tm-473-november
 	.Now_sec h2 { font-size: 40px; line-height: 40px; }
 	.Now_sec p { padding: 15px 0px; font-size: 13px; }
 	.Now_sec .Tabside { padding: 50px 0 0px 0; }
-	.Now_sec .Tabside .Description { margin-top: 0px; width: 51%; }
+	.Now_sec .Tabside .Description { margin-top: 0px; width: 100%; }
 	.Now_sec .Tabside .Description p { padding: 10px 0px; }
-	.Now_sec .Tabside .TabImage { width: 45.63%; }
+	.Now_sec .Tabside .TabImage { width: 0%; }
 	.Now_sec .Tabside .TabImage .img1 { left: 0px; background-position: -40px 203px; }
 	.Now_sec .Tabside .TabImage .img1 img { width: 95%; }
 	
