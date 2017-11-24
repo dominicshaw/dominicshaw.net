@@ -209,11 +209,24 @@ http://www.templatemo.com/tm-473-november
 	#mobile_sec .menumobile .Navigation li:last-child { border-bottom: none; }
 	
 	
-	.Banner_sec { width: 100%; height: 620px; }
+	.Banner_sec { width: 100%; height: 520px; }
 	.Banner_sec .Center {width: 100%; padding: 0px 3%; }
 	.Banner_sec .bannerside { top: 144px; }
 	.Banner_sec .leftside { padding: 0px 0px 20px 0px; width: 100%; float: none; }
 	.Banner_sec .rightside { width: 99%;}
+    
+    /*.Banner_sec .rightside .Slider { display: none; }
+    .Banner_sec .rightside .Slider .text { display: none; }
+    .Banner_sec .rightside .Slider .text .Icon { display: none; }
+    .Banner_sec .rightside .Slider .text .Icon li { display: none; }
+    .Banner_sec .rightside .Slider .text .Lorem { display: none; }
+    .Banner_sec .rightside .Slider .text .Lorem p { display: none; }
+    .Banner_sec .rightside .Slider .text .Lorem p span { display: none; }
+    .Banner_sec .rightside .Shadow { display: none; }
+    .Banner_sec .rightside .prevBtn { display: none; }
+    .Banner_sec .rightside .nextBtn { display: none; }
+    .Banner_sec .rightside #slider li img { display: none; }*/	
+
 	.Banner_sec .rightside .Slider { width: 100%;}
 	.Banner_sec .rightside .Slider .text { padding: 10px 10px; }
 	.Banner_sec .rightside .Slider .text .Icon { width: 28%; }
@@ -223,7 +236,7 @@ http://www.templatemo.com/tm-473-november
 	.Banner_sec .rightside .Shadow { width: 105.5%; left: -16px; }
 	.Banner_sec .rightside .prevBtn { top: 100px; left: 10px; }
 	.Banner_sec .rightside .nextBtn { top: 100px; right: 10px; }
-	.Banner_sec .rightside #slider li img { height: 280px; width: 100%;}	
+	.Banner_sec .rightside #slider li img { height: 280px; width: 100%;}
 
 	.bgcolor { height: 50px; }
 
@@ -315,7 +328,7 @@ http://www.templatemo.com/tm-473-november
 	#mobile_sec .menumobile .Navigation li:last-child { border-bottom: none; }
 
 	
-	.Banner_sec { width: 100%; height: 556px; }
+	.Banner_sec { width: 100%; height: 456px; }
 	.Banner_sec .Center {width: 100%; padding: 0px 3%; }
 	.Banner_sec .bannerside { top: 90px; }
 	.Banner_sec .leftside { padding: 0px 0px 10px 0px; width: 100%; float: none; }
@@ -323,7 +336,18 @@ http://www.templatemo.com/tm-473-november
 	.Banner_sec .leftside p { font-size: 14px; line-height: 18px; padding: 10px 0px; }
 	.Banner_sec .leftside a { font-size: 13px; }
 	.Banner_sec .rightside { width: 98%;}
-	.Banner_sec .rightside .Slider { width: 99%; text-align: center; }
+    .Banner_sec .rightside .Slider { display: none; }
+    .Banner_sec .rightside .Slider .text { display: none; }
+    .Banner_sec .rightside .Slider .text .Icon { display: none; }
+    .Banner_sec .rightside .Slider .text .Icon li { display: none; }
+    .Banner_sec .rightside .Slider .text .Lorem { display: none; }
+    .Banner_sec .rightside .Slider .text .Lorem p { display: none; }
+    .Banner_sec .rightside .Slider .text .Lorem p span { display: none; }
+    .Banner_sec .rightside .Shadow { display: none; }
+    .Banner_sec .rightside .prevBtn { display: none; }
+    .Banner_sec .rightside .nextBtn { display: none; }
+    .Banner_sec .rightside #slider li img { display: none; }	
+	/*.Banner_sec .rightside .Slider { display: none; text-align: center; }
 	.Banner_sec .rightside .Slider .text { padding: 10px 10px; }
 	.Banner_sec .rightside .Slider .text .Icon { width: 100%; }
 	.Banner_sec .rightside .Slider .text .Icon li { float: none!important; display: inline-block; padding: 0px 10px;}
@@ -333,7 +357,7 @@ http://www.templatemo.com/tm-473-november
 	.Banner_sec .rightside .Shadow { width: 105.5%; left: -16px; }
 	.Banner_sec .rightside .prevBtn { top: 100px; left: 10px; }
 	.Banner_sec .rightside .nextBtn { top: 100px; right: 10px; }
-	.Banner_sec .rightside #slider li img { height: 290px; width: 100%;}	
+	.Banner_sec .rightside #slider li img { height: 290px; width: 100%;}*/	
 
 	
 	.bgcolor { height: 50px; }
