@@ -23,6 +23,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -65,6 +66,15 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="img\Slider-img10.JPG" />
+    <Content Include="img\Slider-img11.JPG" />
+    <Content Include="img\Slider-img3.JPG" />
+    <Content Include="img\Slider-img4.jpg" />
+    <Content Include="img\Slider-img5.JPG" />
+    <Content Include="img\Slider-img6.JPG" />
+    <Content Include="img\Slider-img7.JPG" />
+    <Content Include="img\Slider-img8.JPG" />
+    <Content Include="img\Slider-img9.jpg" />
     <Content Include="packages.config" />
     <Content Include="files\DominicShaw-CV-Redacted.docx" />
     <Content Include="files\DominicShaw-CV-Redacted.pdf" />

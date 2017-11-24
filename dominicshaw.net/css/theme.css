@@ -125,7 +125,7 @@ header.smaller .Navigation li { height: 60px; }
 .Banner_sec .rightside .Slider .text li a .fa { padding: 13px; margin-right: 10px; color: #fff; border-radius: 50px; border: solid 2px #fff; transition: all 0.3s ease; }
 .Banner_sec .rightside .Slider .text li:hover a .fa { background: #ff9000; color: #fff; border: solid 2px #ff9000; }
 .Banner_sec .rightside .Slider .text li:last-child { padding: 0; }
-.Banner_sec .rightside .Slider .text .Lorem { float: right; width: 31%; }
+.Banner_sec .rightside .Slider .text .Lorem { float: right; width: 61%; }
 .Banner_sec .rightside .Slider .text .Lorem p { padding-top: 5px; font-size: 18px; color: #fff; margin: 0; font-family: 'Open Sans', sans-serif; font-weight: 400; text-transform: uppercase; text-align: right; line-height: 19px; }
 .Banner_sec .rightside .Slider .text .Lorem p span { font-size: 14px; text-align: right; color: #ff9000; display: block; text-transform: capitalize;}
 .Banner_sec .rightside .prevBtn { width: 42px; height: 42px; display: block; text-indent: -9999px; background: url(../img/prev-arrow.png) no-repeat; position: absolute; top: 213px; left: 49px;  z-index: 1; opacity: 0.5; transition: opacity 0.3s ease; }
