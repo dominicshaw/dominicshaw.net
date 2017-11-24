@@ -116,7 +116,7 @@ header.smaller .Navigation li { height: 60px; }
 .Banner_sec .rightside ul { list-style: none; margin: 0; }
 .Banner_sec .rightside li { padding: 0; margin: 0; float: none!important; }
 .Banner_sec .rightside #slider { width: 100%; float: right;  position: relative; z-index: 1; }
-.Banner_sec .rightside .Slider .text { padding: 25px 47px 21px 30px; position: absolute; bottom: 0; left: 0; width: 100%; background: rgba(0, 0, 0, 0.7); }
+.Banner_sec .rightside .Slider .text { padding: 25px 47px 21px 30px; position: absolute; bottom: 0; left: 0; width: 100%; background: rgba(0, 0, 0, 0.5); }
 .Banner_sec .rightside .Slider .text .Icon { width: 38%; float: left; }
 .Banner_sec .rightside .Slider .text ul { list-style: none; margin: 0; }
 .Banner_sec .rightside .Slider .text li { float: left!important; padding: 0 30px 0 10px; margin: 0; }
@@ -160,7 +160,7 @@ header.smaller .Navigation li { height: 60px; }
     .Now_sec .Tabside .TabImage .img1 img { padding: 5px; border: solid 1px #ececec; background: #fff;  }
     .Now_sec .Tabside .TabImage .img2 { position: absolute; top: 40px; left: 2px; height: 260px; background: url(../img/about-shadow.png) bottom center no-repeat; background-position: 0 223px; }
     .Now_sec .Tabside .TabImage .img2 img { padding: 5px; border: solid 1px #ececec; background: #fff;  }
-    .Now_sec .Tabside .Description { width: 100%; float: right; text-align: left; margin-top: -6px;}
+    .Now_sec .Tabside .Description { width: 100%; float: right; text-align: left; margin-top: -6px; }
     .Now_sec .Tabside .Description h3 { font-size: 24px; color: #000; margin: 0; text-transform: uppercase; font-family:'Open Sans'; line-height: 29px; }
     .Now_sec .Tabside .Description h3 span { padding-left: 3px; font-size: 14px; color: #ff9000; display: block; }
     .Now_sec .Tabside .Description p { padding: 21px 0 4px 0; font-size: 14px; color: #979797; margin: 0; font-family:'Open Sans'; line-height: 25px; }

@@ -66,16 +66,27 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="img\Slider-img10.JPG" />
-    <Content Include="img\Slider-img11.JPG" />
-    <Content Include="img\Slider-img12.JPG" />
-    <Content Include="img\Slider-img3.JPG" />
-    <Content Include="img\Slider-img4.jpg" />
-    <Content Include="img\Slider-img5.JPG" />
-    <Content Include="img\Slider-img6.JPG" />
-    <Content Include="img\Slider-img7.JPG" />
-    <Content Include="img\Slider-img8.JPG" />
-    <Content Include="img\Slider-img9.jpg" />
+    <Content Include="img\front\Ankor-Wat.jpg" />
+    <Content Include="img\front\Bayon.jpg" />
+    <Content Include="img\front\CT1.JPG" />
+    <Content Include="img\front\CT2.JPG" />
+    <Content Include="img\front\CT3.JPG" />
+    <Content Include="img\front\Goa.jpg" />
+    <Content Include="img\front\Halong.jpg" />
+    <Content Include="img\front\Hika.jpg" />
+    <Content Include="img\front\Izta.jpg" />
+    <Content Include="img\front\Kunming.JPG" />
+    <Content Include="img\front\Leh.jpg" />
+    <Content Include="img\front\Lijang.JPG" />
+    <Content Include="img\front\Nevado.JPG" />
+    <Content Include="img\front\Popo1.JPG" />
+    <Content Include="img\front\Popo2.JPG" />
+    <Content Include="img\front\Tiger.JPG" />
+    <Content Include="img\front\Ubud.JPG" />
+    <Content Include="img\front\Vientiane.jpg" />
+    <Content Include="img\front\Wall.JPG" />
+    <Content Include="img\front\Wedding.jpg" />
+    <Content Include="img\front\Yangshao.JPG" />
     <Content Include="packages.config" />
     <Content Include="files\DominicShaw-CV-Redacted.docx" />
     <Content Include="files\DominicShaw-CV-Redacted.pdf" />
@@ -127,8 +138,6 @@
     <Content Include="img\prev-arrow.png" />
     <Content Include="img\Services-bg.jpg" />
     <Content Include="img\Shadow-img.png" />
-    <Content Include="img\Slider-img1.jpg" />
-    <Content Include="img\Slider-img2.jpg" />
     <Content Include="img\tt-bg.jpg" />
     <Content Include="img\tt-cn.png" />
     <Content Include="img\tt-hover-icn.png" />
