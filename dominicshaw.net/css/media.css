@@ -186,7 +186,7 @@ http://www.templatemo.com/tm-473-november
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 480px) and (max-width: 768px) {
     
     #headertextbig { display: none; }
     #headertextsml { display: inline; white-space: nowrap; }
@@ -197,7 +197,7 @@ http://www.templatemo.com/tm-473-november
 	header .site-logo h1 { margin: 0px; line-height: 36px; }
 	header.smaller { height: 55px;}
 	header.smaller .site-logo { padding: 10px 0% 0px 3%; }
-	header.smaller .site-logo h1 a { font-size: 36px; }
+	header.smaller .site-logo h1 a { font-size: 30px; }
 	
 	#mobile_sec { position: fixed; width: 100%; }
 	#mobile_sec .mobile { display: block; position: relative; float: right;}
@@ -304,7 +304,7 @@ http://www.templatemo.com/tm-473-november
 	header .site-logo h1 { margin: 0px; line-height: 36px; }
 	header.smaller { height: 55px;}
 	header.smaller .site-logo { padding: 10px 0% 0px 3%; }
-	header.smaller .site-logo h1 a { font-size: 36px; }
+	header.smaller .site-logo h1 a { font-size: 30px; }
 	
 	#mobile_sec { position: fixed; width: 100%;}
 	#mobile_sec .mobile { display: block; position: relative; float: right; }
