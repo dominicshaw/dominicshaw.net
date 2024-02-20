@@ -1,7 +1,8 @@
-<p>
+<!--<p>
 	My time at TT can be best summarised by the projects listed below. Each of these projects has been built from scratch and the last two were written entirely by
-	myself (with peer review and shared best practice). Each features a <span>WPF MVVM</span> front-end, a <span>WCF</span> middle-tier (although many new projects are now <span>Web API</span>), and a <span>SQL Server</span>
-	backend. Each also has a lightweight <span>ASP.NET</span> front-end designed for remote access. They all make heavy use of <span>SSRS</span> and <span>DevExpress reporting</span>.
+	myself (with peer review and shared best practice). Each features a <span>WPF MVVM</span> front-end, a <span>WCF</span> middle-tier (although many new projects are now
+	<span>Web API</span>), and a <span>SQL Server</span> backend. Each also has a lightweight <span>ASP.NET</span> front-end designed for remote access. They all make heavy
+	use of <span>SSRS</span> and <span>DevExpress reporting</span>.
 </p>
 <ul>
 	<li>
@@ -34,5 +35,57 @@
 <p>
 	As with any small to medium sized company, there is often call for small applications; be that integrations between systems, web front-ends for simple tasks, scheduled jobs,
 	or reports. This is something I am happy to absorb into my tasks, and this is a regular reality. Some examples include <span>IPO ticketing</span> and workflow, the <span>
-	Compliance team's workflow application</span> (attestations, PA trading, regulatory reporting, etc.), <span>chart packs</span>, and many more.
+		Compliance team's workflow application
+	</span> (attestations, PA trading, regulatory reporting, etc.), <span>chart packs</span>, and many more.
+</p>-->
+
+
+<p>
+    I built & maintain over 70 repositories but to give some idea of what I do at TT, here are 3 projects, all built from scratch. These 3 feature
+    <span>middle tiers</span> with either <span>aspnetcore</span> or <span>WCF</span>, <span>SQL</span> backends, and up to three front-ends written 
+    with <span>Angular</span>, <span>WPF</span>, and <span>Xamarin Forms</span>, to cover access via <span>Web</span>, <span>Windows</span>, and 
+    <span>Mobile</span> respectively. They all make heavy use of <span>SSRS</span> and <span>DevExpress</span> reporting.
+</p>
+<ul>
+	<li>
+        A “to-the-second” <span>risk & exposure system</span>, specifically targeting hedge and macro teams but later rolled out to the long side as well.
+        This was one of my first large projects at TT. Now mature, it has been, by any standard, very successful. It integrates directly with our
+        <span>PMS/OMS</span>, <span>Bloomberg</span>, and other core systems, to deliver accurate profit and loss numbers in real-time. The work on this system was split
+        largely into middle and front-end, between two developers.
+    </li>
+	<li>
+		A research system, which allows quick and easy storing and retrieval of research (models, broker reports, etc). The project, critical to a
+		research-led investment firm, could have been simple however there was a lot of room for innovation. Some areas that I found to increase the
+		effectiveness of the product were:
+		<ul>
+			<li>Automatic generation of <span>investment cases</span> from <span>Bloomberg</span> data;</li>
+			<li>“<span>Ideas</span>” management for tracking stocks;</li>
+            <li>
+                <span>Integration with the OMS</span> to tie everything together – i.e. what research is for what position / idea, association
+                of research with stocks from the OMS, etc.;
+            </li>
+			<li>Plugins for Microsoft Office (with <span>VSTO toolbars</span>) and Adobe Reader (with their plugin SDK);</li>
+			<li>
+				<span>Microsoft Graph</span> & Exchange (<span>EWS</span>) integration which read from a “deposit” mailbox to get notes sent via email, scrape out
+				the associated companies and attachments and upload it all to the system. There is also functionality to scrape a general
+				“research” mailbox for broker reports;
+			</li>
+			<li>Company Meeting management – use of Microsoft Graph and EWS to create better view/management of meetings.</li>
+		</ul>
+        This system replaced Advent’s Tamale and was preferred by all users – not just in user experience but in functionality as well. The resounding success of this project led to my 
+        being given the reigns to developing another, highly integral system for the company:
+	</li>
+    <li>
+        A “<span>ticketing</span>” application which allows the managers to model a trade for most asset classes and submit the ticket directly to traders and/or the OMS.
+        The modelling functionality built into this allowed <span>automation</span> of things like <span>dispersion</span>, <span>CFD</span>/<span>PNote</span>/etc management, 
+        <span>order sizing</span>, as well as any validation and compliance that the OMS is not suited to. My <span>close work with fund managers</span> on this project has 
+        enabled me to create a user-friendly application that they were keen and confident to use. The successful uptake of this application by the fund managers reflected 
+        the real success of the project, especially as many were initially reticent to change existing processes.
+    </li>
+</ul>
+<p>
+	As with any small to medium sized company, there is often call for small applications; be that integrations between systems, web front ends for simple tasks, scheduled jobs,
+    or reports. This is something I am happy to absorb into my tasks, and this is a regular reality. Some examples include <span>IPO ticketing</span> and workflow, the 
+    <span>Compliance</span> team’s workflow application (<span>attestations</span>, <span>PA trading</span>, <span>regulatory reporting</span>, etc.), 
+    <span>senior manager workflow</span>, <span>chart packs</span>, <span>SWIFT</span> messaging, and many more.
 </p>
