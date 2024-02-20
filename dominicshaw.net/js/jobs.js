@@ -16,13 +16,13 @@ function TT() {
                 indexLabelPlacement: "outside",
                 type: "doughnut",
                 dataPoints: [
-                    { y: 40, label: "WPF 40%", indexLabel: "WPF 40%" },
-                    { y: 10, label: "ASP.NET 10%", indexLabel: "ASP.NET 10%" },
+                    { y: 27, label: "Angular 27%", indexLabel: "Angular 27%" },
+                    { y: 10, label: "WPF 10%", indexLabel: "WPF 10%" },
                     { y: 10, label: "SQL 10%", indexLabel: "SQL 10%" },
-                    { y: 20, label: "WCF 20%", indexLabel: "WCF 20%" },
-                    { y: 5, label: "Web API 5%", indexLabel: "Web API 5%" },
+                    { y: 5, label: "WCF 5%", indexLabel: "WCF 5%" },
+                    { y: 33, label: "Web API 33%", indexLabel: "Web API 33%" },
                     { y: 10, label: "Reporting (SSRS, DevExpress) 10%", indexLabel: "Reporting (SSRS, DevExpress) 10%" },
-                    { y: 5, label: "Mobile, i.e. Xamarin & SPA 5%", indexLabel: "Mobile, i.e. Xamarin & SPA 5%" }
+                    { y: 5, label: "Mobile, i.e. Xamarin 5%", indexLabel: "Mobile, i.e. Xamarin 5%" }
                 ]
             }
         ]
