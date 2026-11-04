@@ -1,0 +1,140 @@
+name: Build and deploy
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  DOTNET_NOLOGO: true
+  DOTNET_CLI_TELEMETRY_OPTOUT: true
+
+jobs:
+  build:
+    name: Build and test
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+
+      - name: Set up .NET 10
+        uses: actions/setup-dotnet@67a3573c9a986a3f9c594539f4ab511d57bb3ce9 # v4.3.1
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Restore
+        run: dotnet restore dominicshaw.net.sln
+
+      - name: Test
+        run: dotnet test dominicshaw.net.sln --configuration Release --no-restore --nologo
+
+      - name: Test contact form
+        run: node --test tests/contact-form.test.js
+
+      - name: Publish Function App
+        run: dotnet publish dominicshaw.net/dominicshaw.net.csproj --configuration Release --no-restore --no-build --nologo --output .artifacts/function
+
+      - name: Assemble static site
+        run: |
+          mkdir -p .artifacts/site
+          cp -R dominicshaw.net/wwwroot/. .artifacts/site/
+
+      - name: Upload Function artifact
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: function-app
+          path: .artifacts/function
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: true
+
+      - name: Upload static-site artifact
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: static-site
+          path: .artifacts/site
+          if-no-files-found: error
+          retention-days: 7
+
+  deploy:
+    name: Deploy to Azure
+    if: github.ref == 'refs/heads/master' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      id-token: write
+    environment:
+      name: production
+      url: https://${{ vars.AZURE_STATIC_WEB_APP_HOSTNAME }}
+    env:
+      AZURE_CORE_OUTPUT: none
+
+    steps:
+      - name: Download Function artifact
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: function-app
+          path: .artifacts/function
+
+      - name: Verify Function artifact
+        run: test -f .artifacts/function/.azurefunctions/Microsoft.Azure.WebJobs.Extensions.FunctionMetadataLoader.dll
+
+      - name: Download static-site artifact
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: static-site
+          path: .artifacts/site
+
+      - name: Configure the public Function URL
+        env:
+          FUNCTION_URL: https://${{ vars.AZURE_FUNCTION_APP_NAME }}.azurewebsites.net
+        run: |
+          sed -i "s|contactApiBaseUrl: \"\"|contactApiBaseUrl: \"${FUNCTION_URL}\"|" .artifacts/site/js/runtime-config.js
+          grep -F "contactApiBaseUrl: \"${FUNCTION_URL}\"" .artifacts/site/js/runtime-config.js
+          node --check .artifacts/site/js/runtime-config.js
+
+      - name: Sign in to Azure with OIDC
+        uses: azure/login@f5d393ae46f8fde4be8b75f32e3fc50e654ad0ca # v3.0.1
+        with:
+          client-id: ${{ vars.AZURE_CLIENT_ID }}
+          tenant-id: ${{ vars.AZURE_TENANT_ID }}
+          subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
+
+      - name: Deploy Function App
+        uses: Azure/functions-action@c5060b3b8bb1ebbcb531abd00c822ecbaa8ea656 # v1.5.7
+        with:
+          app-name: ${{ vars.AZURE_FUNCTION_APP_NAME }}
+          package: .artifacts/function
+
+      - name: Get an ephemeral Static Web Apps deployment token
+        id: static-token
+        env:
+          STATIC_WEB_APP_NAME: ${{ vars.AZURE_STATIC_WEB_APP_NAME }}
+          RESOURCE_GROUP: ${{ vars.AZURE_RESOURCE_GROUP }}
+        run: |
+          token=$(az staticwebapp secrets list --name "$STATIC_WEB_APP_NAME" --resource-group "$RESOURCE_GROUP" --query properties.apiKey --output tsv)
+          echo "::add-mask::$token"
+          echo "token=$token" >> "$GITHUB_OUTPUT"
+
+      - name: Deploy static site
+        uses: Azure/static-web-apps-deploy@4d27395796ac319302594769cfe812bd207490b1 # v1
+        with:
+          azure_static_web_apps_api_token: ${{ steps.static-token.outputs.token }}
+          action: upload
+          app_location: .artifacts/site
+          output_location: ''
+          skip_app_build: true
+          skip_api_build: true
