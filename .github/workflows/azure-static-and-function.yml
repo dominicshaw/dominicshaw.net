@@ -79,8 +79,6 @@ jobs:
     environment:
       name: production
       url: https://${{ vars.AZURE_STATIC_WEB_APP_HOSTNAME }}
-    env:
-      AZURE_CORE_OUTPUT: none
 
     steps:
       - name: Download Function artifact
